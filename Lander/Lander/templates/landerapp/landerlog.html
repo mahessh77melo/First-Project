@@ -1,0 +1,33 @@
+{% extends "landerapp/base.html" %}
+{% block body_block %}
+{% load static %}
+<div class="container">
+  <h3 class="display-3">Welcome Back!</h3>
+  <form class="form-group" method="POST">
+    {% csrf_token %}
+    <div class="form-group input-group">
+      <input type="email" id="ms"class="form-control" placeholder="email-id" name="email" aria-label="Text input with dropdown button" required>
+      <div class="input-group-append">
+        <button class="btn btn-outline-warning dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Email Site</button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" id="g"href="#">@gmail.com</a>
+          <a class="dropdown-item" id="y"href="#">@yahoo.com</a>
+          <a class="dropdown-item" id="h"href="#">@hotmail.com</a>
+          <div role="separator" class="dropdown-divider"></div>
+          <a class="dropdown-item" id="o"href="#">Other</a>
+        </div>
+      </div>
+    </div>
+  <div class="form-group">
+    {% csrf_token %}
+      <input type="password" name="password"id="ps"class="form-control"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" value=""placeholder="Password" required>
+
+    
+  </div>
+
+  <button type="submit" id="lg"class="btn btn-primary btn-lg" name="button">Log In</button>
+  <button type="reset" id="rst"class="btn btn-danger btn-md"name="button">Clear</button>
+
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "landerapp/base.html" %}
+{% block body_block %}
+{% load static %}
+<div class="container">
+
+    <h1 class="display-2">Landing.com</h1>
+    {% if user.is_authenticated %}
+    <div class="Welcome">
+      <h3>Welcome {{ user.username }}</h3>
+      <h3>We hope that your experience with us would be great!</h3>
+    </div>
+    {% endif %}
+
+</div>
+
+{% endblock %}

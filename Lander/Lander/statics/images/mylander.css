@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+h1{
+  transform: scale(1.5);
+  text-align: center;
+  margin-top: 360px;
+  color: white;
+}
+.nav-link{
+  color:white;
+}
+.container{
+  margin-top: 100px;
+}
+p{
+  color: white;
+}
+label{
+  color: white;
+}
+.form-group{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+#cb{
+  margin-bottom: 30px;
+}
+.form-control:focus {
+  /* transform: scale(1.04); */
+        border-color: #8ac926;
+
+    }
+.btn{
+
+  margin-right: 10px;
+}
+.btn-success:hover{
+  transform: scale(1.1);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.01) inset, 12px 12px 12px green;
+}
+.btn-danger:hover{
+  transform: scale(1.07);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.01) inset, 12px 12px 12px red;
+}
+.btn-primary:hover{
+  transform: scale(1.07);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.01) inset, 12px 12px 12px blue;
+}
+.turngr{
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.075) inset, 0 0 20px green;
+}
+.turnrd{
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.075) inset, 0 0 20px red;
+}
+.form-group,.form-control{
+  text-align: auto;
+  width:400px;
+}
+.display-4{
+  margin-bottom: 15px;
+}
+#ms{
+  padding-right: 0px;
+}
+.dropdown-item:hover{
+  background-color: #ffba08;
+}
+.display-3{
+  color:white;
+}
+
+.Welcome{
+  text-align: right;
+  margin-top: 200px;
+  color: #6d6875;
+}
+.nav-item:hover{
+  border-bottom:  solid #9d0208;
+}
